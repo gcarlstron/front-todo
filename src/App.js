@@ -43,7 +43,7 @@ function App() {
     try{
       if(currentTask){
         // Update task
-        await updateTask(currentTask.id, {...formData, id: currentTask.id});
+        await updateTask(currentTask.id, formData);
         showNotification('Tarefa atualizada com sucesso', 'success');
       }else{
         // Create task
